@@ -25,6 +25,8 @@ import numpy as np
 参数说明：
 
 返回值说明：
+    sapsanis_dataset:
+        {female_1:{tip_ch1:[动作编次，采用数据]}
 '''
 def read_sapsanis():
     sapsanis_dataset ={}
@@ -45,7 +47,7 @@ def read_csl_hdemg():
 
 def main():
     data = read_sapsanis()
-    print(data.keys)
-
+    for key in data.keys():
+        print(key)
 if __name__ == '__main__':
     main()
